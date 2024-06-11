@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Responsive Website Using Html and Css only</title>
+    <style>
+        html,
+        body {
+            margin: 0px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .main {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            background-color: none;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            height: 70px;
+
+        }
+
+        .nav2 li {
+            display: inline;
+            padding: 0vw 3vw;
+            font-size: 1.6vw;
+            color: black;
+        }
+
+        .nav h2 {
+            font-size: 2vw;
+            margin: 1vw;
+            padding: 1vw;
+        }
+
+        .nav2 ul {
+            font-size: 1vw;
+            list-style: none;
+            margin-right: 3vw;
+        }
+
+        .nav2 i {
+            display: none;
+        }
+
+        .nav2 a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav2 a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            /* Adjust the position of the underline */
+            width: 0;
+            height: 2px;
+            /* Height of the underline */
+            background-color: black;
+            /* Color of the underline */
+            transition: width 0.3s ease-in-out;
+            /* Smooth transition for underline width */
+        }
+
+        .nav2 a:hover {
+            color: #ff0000;
+            /* Change text color on hover */
+        }
+
+        .nav2 a:hover::after {
+            width: 100%;
+            /* Make the underline full width on hover */
+        }
+
+        .nav2 button {
+            padding: 1.2vw 2vw;
+            font-size: 1vw;
+            font-weight: bold;
+            border-radius: 28px;
+            border: none;
+            color: white;
+            background-color: black;
+        }
+
+        @media (max-width: 600px) {
+            .nav h2 {
+                font-size: 6vw;
+            }
+
+
+            .nav {
+                padding: 2vw;
+                height: 36px;
+                background-color: chartreuse;
+            }
+
+            .nav2 li,
+            button {
+                display: none;
+            }
+
+            .nav h2 {
+                margin: 2vw;
+            }
+
+            .nav2 i {
+                display: block;
+                font-size: 6vw;
+                font-weight: bold;
+            }
+
+
+        }
+
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allow items to wrap to the next line if necessary */
+            margin: 7vw;
+            justify-content: space-between;
+            gap: 10vw;
+        }
+
+        .prod {
+            width: 30vw;
+            height: 20vw;
+            border-radius: 10px;
+            background: white;
+            border: none;
+            box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                -15px -15px 30px rgb(60, 60, 60);
+        }
+
+        .prod h3 {
+            font-size: 3vw;
+            margin-left: 2vw;
+            color: rebeccapurple;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        .prod p {
+            margin-left: 2vw;
+            font-size: 1.6vw;
+        }
+
+        .prod button {
+            margin-left: 2vw;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            border: none;
+            background-color: rebeccapurple;
+            color: white;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+
+        .prod button:hover {
+            background-color: green;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <h2>Logo</h2>
+            <div class="nav2">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">News</a></li>
+                    <button>Sign In</button>
+                    <i class="ri-menu-3-line"></i>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <div class="prod">
+                <h3>Motorcyle</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, eaque!</p>
+                <button>Explore</button>
+            </div>
+
+            <div class="prod">
+                <h3>Motorcyle</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, eaque!</p>
+                <button>Explore</button>
+            </div>
+
+            <div class="prod">
+                <h3>Motorcyle</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, eaque!</p>
+                <button>Explore</button>
+            </div>
+
+            <div class="prod">
+                <h3>Motorcyle</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, eaque!</p>
+                <button>Explore</button>
+            </div>
+
+            <div class="prod">
+                <h3>Motorcyle</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, eaque!</p>
+                <button>Explore</button>
+            </div>
+
+            <div class="prod">
+                <h3>Motorcyle</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, eaque!</p>
+                <button>Explore</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
